@@ -1,5 +1,13 @@
 # Ads Service Backend
 
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue)
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+
+# Ads Service Backend
+
 Backend сервис для размещения объявлений (аналог Avito / Юла).
 
 Проект реализует REST API для работы с пользователями, объявлениями, комментариями и изображениями.
