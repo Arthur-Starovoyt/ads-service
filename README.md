@@ -65,7 +65,7 @@ Controller → Service → Repository → Database
 
 # Структура проекта
 
-```
+```text
 src/main/java/ru/skypro/homework
 ├── config
 │   ├── WebConfig
@@ -132,7 +132,7 @@ ADMIN:
 
 Получение изображения:
 
-GET /images/{fileName}
+`GET /images/{fileName}`
 
 ---
 
@@ -154,19 +154,42 @@ GET /images/{fileName}
 
 ---
 
+# Запуск через Docker
+
+Запуск проекта одной командой:
+
+```bash
+docker-compose up --build
+```
+
+После запуска:
+
+Backend:  
+http://localhost:8080
+
+Swagger:  
+http://localhost:8080/swagger-ui/index.html
+
+PostgreSQL:  
+localhost:5432
+
+---
+
 # Запуск проекта
 
 ### 1. Запустить PostgreSQL
 
-### 2. Настроить application.properties
+### 2. Настроить `application.properties`
 
 ### 3. Запустить приложение
 
+```bash
 mvn spring-boot:run
+```
 
 Swagger:
 
-http://localhost:8080/swagger-ui/index.html
+`http://localhost:8080/swagger-ui/index.html`
 
 ---
 
