@@ -66,7 +66,7 @@ Controller → Service → Repository → Database
 # Структура проекта
 
 ```text
-src/main/java/ru/skypro/homework
+src/main/java/ru/arthur/ads
 ├── config
 │   ├── WebConfig
 │   └── WebSecurityConfig
@@ -174,7 +174,7 @@ PostgreSQL:
 localhost:5433
 
 Database:  
-ads_db
+ads
 
 Username:  
 ads_user
