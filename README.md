@@ -132,7 +132,7 @@ ADMIN:
 
 Получение изображения:
 
-`GET /images/{fileName}`
+GET /images/{fileName}
 
 ---
 
@@ -159,10 +159,10 @@ ADMIN:
 Запуск проекта одной командой:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
-После запуска:
+После запуска приложение будет доступно:
 
 Backend:  
 http://localhost:8080
@@ -171,15 +171,24 @@ Swagger:
 http://localhost:8080/swagger-ui/index.html
 
 PostgreSQL:  
-localhost:5432
+localhost:5433
+
+Database:  
+ads_db
+
+Username:  
+ads_user
+
+Password:  
+ads_password
 
 ---
 
-# Запуск проекта
+# Запуск проекта локально
 
 ### 1. Запустить PostgreSQL
 
-### 2. Настроить `application.properties`
+### 2. Настроить application.properties
 
 ### 3. Запустить приложение
 
@@ -189,7 +198,7 @@ mvn spring-boot:run
 
 Swagger:
 
-`http://localhost:8080/swagger-ui/index.html`
+http://localhost:8080/swagger-ui/index.html
 
 ---
 
@@ -198,10 +207,11 @@ Swagger:
 - Pagination для объявлений
 - Сортировка объявлений
 - Фильтрация объявлений
-- Docker Compose для запуска
 - Unit тесты
 - Интеграционные тесты
 - CI/CD
+- Docker Registry
+- Kubernetes deployment
 
 ---
 
