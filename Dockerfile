@@ -10,7 +10,7 @@ RUN chmod +x mvnw
 
 COPY src src
 
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:17-jre
 
